@@ -8,7 +8,7 @@ let mcl = mongodb.MongoClient;
 //create router instance
 let router = express.Router();
 //create rest api
-router.put("/", (req, res) => {
+router.post("/", (req, res) => {
   let p_id = req.body.p_id;
   let obj = {
     p_name: req.body.p_name,
